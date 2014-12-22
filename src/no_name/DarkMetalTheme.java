@@ -59,14 +59,14 @@ import javax.swing.text.html.StyleSheet;
  */
 public class DarkMetalTheme extends MetalTheme {
 
-    private final ColorUIResource primary1 = new ColorUIResource( 121, 121, 125 );
-    private final ColorUIResource primary2 = new ColorUIResource( 71, 71, 75 );
-    private final ColorUIResource primary3 = new ColorUIResource( 99, 99, 99 );
-    private final ColorUIResource secondary1 = new ColorUIResource( 113, 113, 113 );
-    private final ColorUIResource secondary2 = new ColorUIResource( 91, 91, 95 );
-    private final ColorUIResource secondary3 = new ColorUIResource( 51, 51, 55 );
-    private final ColorUIResource black = new ColorUIResource( 222, 222, 222 );
-    private final ColorUIResource white = new ColorUIResource( 47, 79, 79 );
+    private final ColorUIResource primary1 = new ColorUIResource( 0x79797d );
+    private final ColorUIResource primary2 = new ColorUIResource( 0x47474b );
+    private final ColorUIResource primary3 = new ColorUIResource( 0x636363 );
+    private final ColorUIResource secondary1 = new ColorUIResource( 0x717171 );
+    private final ColorUIResource secondary2 = new ColorUIResource( 0x5b5b5f );
+    private final ColorUIResource secondary3 = new ColorUIResource( 0x333337 );
+    private final ColorUIResource black = new ColorUIResource( 0xdedede );
+    private final ColorUIResource white = new ColorUIResource( 0x2f4f4f );
 
     @Override
     public String getName() {
@@ -78,8 +78,8 @@ public class DarkMetalTheme extends MetalTheme {
         super.addCustomEntriesToTable( table );
         table.put( "nb.dark.theme", Boolean.TRUE );
         table.put( "nb.imageicon.filter", new DarkIconFilter() ); //NOI18N
-        table.put( "nb.errorForeground", new Color(255,71,71) ); //NOI18N
-        table.put( "nb.warningForeground", new Color(255,216,0) ); //NOI18N
+        table.put( "nb.errorForeground", new Color(0xff4747) ); //NOI18N
+        table.put( "nb.warningForeground", new Color(0xffd80) ); //NOI18N
         table.put( "PropSheet.setBackground", new Color( primary2.getRGB() ) ); //NOI18N
         table.put( "PropSheet.selectedSetBackground", new Color( primary1.getRGB() ) ); //NOI18N
         table.put( "PropSheet.selectedSetForeground", black ); //NOI18N
@@ -97,107 +97,107 @@ public class DarkMetalTheme extends MetalTheme {
 
         table.put( "nb.heapview.background2", primary2 ); //NOI18N
 
-        table.put( "nb.heapview.grid1.start", new Color( 97, 95, 87 ) ); //NOI18N
-        table.put( "nb.heapview.grid1.end", new Color( 98, 96, 88 ) ); //NOI18N
-        table.put( "nb.heapview.grid2.start", new Color( 99, 97, 90 ) ); //NOI18N
-        table.put( "nb.heapview.grid2.end", new Color( 101, 99, 92 ) ); //NOI18N
-        table.put( "nb.heapview.grid3.start", new Color( 102, 101, 93 ) ); //NOI18N
-        table.put( "nb.heapview.grid3.end", new Color( 105, 103, 95 ) ); //NOI18N
-        table.put( "nb.heapview.grid4.start", new Color( 107, 105, 97 ) ); //NOI18N
-        table.put( "nb.heapview.grid4.end", new Color( 109, 107, 99 ) ); //NOI18N
+        table.put( "nb.heapview.grid1.start", new Color( 0x615f57 ) ); //NOI18N
+        table.put( "nb.heapview.grid1.end", new Color( 0x626058 ) ); //NOI18N
+        table.put( "nb.heapview.grid2.start", new Color( 0x63615a ) ); //NOI18N
+        table.put( "nb.heapview.grid2.end", new Color( 0x65635c ) ); //NOI18N
+        table.put( "nb.heapview.grid3.start", new Color( 0x66655d ) ); //NOI18N
+        table.put( "nb.heapview.grid3.end", new Color( 0x69675f ) ); //NOI18N
+        table.put( "nb.heapview.grid4.start", new Color( 0x6b6961 ) ); //NOI18N
+        table.put( "nb.heapview.grid4.end", new Color( 0x6d6b63 ) ); //NOI18N
 
-        UIManager.put( "nb.bugtracking.comment.background", new Color(71, 71, 75) ); //NOI18N
-        UIManager.put( "nb.bugtracking.comment.foreground", new Color(230, 230, 230) ); //NOI18N
-        UIManager.put( "nb.bugtracking.label.highlight", new Color(71, 71, 75) ); //NOI18N
-        UIManager.put( "nb.bugtracking.table.background", new Color(18, 30, 49) ); //NOI18N
-        UIManager.put( "nb.bugtracking.table.background.alternate", new Color(13, 22, 36) ); //NOI18N
-        UIManager.put( "nb.bugtracking.new.color", new Color(0, 224, 0) ); //NOI18N
-        UIManager.put( "nb.bugtracking.modified.color", new Color(81, 182, 255) ); //NOI18N
-        UIManager.put( "nb.bugtracking.obsolete.color", new Color(130, 130, 130) ); //NOI18N
-        UIManager.put( "nb.bugtracking.conflict.color", new Color(255, 51, 51)); //NOI18N
+        UIManager.put( "nb.bugtracking.comment.background", new Color(0x47474b) ); //NOI18N
+        UIManager.put( "nb.bugtracking.comment.foreground", new Color(0xe6e6e6) ); //NOI18N
+        UIManager.put( "nb.bugtracking.label.highlight", new Color(0x47474b) ); //NOI18N
+        UIManager.put( "nb.bugtracking.table.background", new Color(0x121e31) ); //NOI18N
+        UIManager.put( "nb.bugtracking.table.background.alternate", new Color(0xd1624) ); //NOI18N
+        UIManager.put( "nb.bugtracking.new.color", new Color(0x0e00) ); //NOI18N
+        UIManager.put( "nb.bugtracking.modified.color", new Color(0x51b6ff) ); //NOI18N
+        UIManager.put( "nb.bugtracking.obsolete.color", new Color(0x828282) ); //NOI18N
+        UIManager.put( "nb.bugtracking.conflict.color", new Color(0xff3333)); //NOI18N
 
-        UIManager.put( "nb.html.link.foreground", new Color(164,164,255) ); //NOI18N
-        UIManager.put( "nb.html.link.foreground.hover", new Color(255,216,0) ); //NOI18N
-        UIManager.put( "nb.html.link.foreground.visited", new Color(50,50,255) ); //NOI18N
-        UIManager.put( "nb.html.link.foreground.focus", new Color(255,216,0) ); //NOI18N
+        UIManager.put( "nb.html.link.foreground", new Color(0xa4a4ff) ); //NOI18N
+        UIManager.put( "nb.html.link.foreground.hover", new Color(0xffd80) ); //NOI18N
+        UIManager.put( "nb.html.link.foreground.visited", new Color(0x3232ff) ); //NOI18N
+        UIManager.put( "nb.html.link.foreground.focus", new Color(0xffd80) ); //NOI18N
 
         UIManager.put( "nb.startpage.defaultbackground", Boolean.TRUE );
         UIManager.put( "nb.startpage.defaultbuttonborder", Boolean.TRUE );
-        UIManager.put( "nb.startpage.bottombar.background", new Color(64,64,64) );
-        UIManager.put( "nb.startpage.topbar.background", new Color(64,64,64) );
-        UIManager.put( "nb.startpage.border.color", new Color(18, 30, 49) );
-        UIManager.put( "nb.startpage.tab.border1.color", new Color(64,64,64) );
-        UIManager.put( "nb.startpage.tab.border2.color", new Color(64,64,64) );
-        UIManager.put( "nb.startpage.rss.details.color", new Color(222, 222, 222) );
-        UIManager.put( "nb.startpage.rss.header.color", new Color(164,164,255) );
+        UIManager.put( "nb.startpage.bottombar.background", new Color(0x404040) );
+        UIManager.put( "nb.startpage.topbar.background", new Color(0x404040) );
+        UIManager.put( "nb.startpage.border.color", new Color(0x121e31) );
+        UIManager.put( "nb.startpage.tab.border1.color", new Color(0x404040) );
+        UIManager.put( "nb.startpage.tab.border2.color", new Color(0x404040) );
+        UIManager.put( "nb.startpage.rss.details.color", new Color(0xdedede) );
+        UIManager.put( "nb.startpage.rss.header.color", new Color(0xa4a4ff) );
         UIManager.put( "nb.startpage.tab.imagename.selected", "org/netbeans/modules/welcome/resources/tab_selected_dark.png" ); //NOI18N
         UIManager.put( "nb.startpage.tab.imagename.rollover", "org/netbeans/modules/welcome/resources/tab_rollover_dark.png" ); //NOI18N
         UIManager.put( "nb.startpage.imagename.contentheader", "org/netbeans/modules/welcome/resources/content_banner_dark.png" ); //NOI18N
-        UIManager.put( "nb.startpage.contentheader.color1", new Color(12,33,61) ); //NOI18N
-        UIManager.put( "nb.startpage.contentheader.color2", new Color(16,24,42) ); //NOI18N
+        UIManager.put( "nb.startpage.contentheader.color1", new Color(0xc213d) ); //NOI18N
+        UIManager.put( "nb.startpage.contentheader.color2", new Color(0x10182a) ); //NOI18N
 
-        UIManager.put( "nb.editor.errorstripe.caret.color", new Color(222, 222, 222) ); //NOI18N
+        UIManager.put( "nb.editor.errorstripe.caret.color", new Color(0xdedede) ); //NOI18N
         UIManager.put( "nb.wizard.hideimage", Boolean.TRUE ); //NOI18N
 
         //diff & diff sidebar
-        UIManager.put( "nb.diff.added.color", new Color(36, 52, 36) ); //NOI18N
-        UIManager.put( "nb.diff.changed.color", new Color(32, 40, 51) ); //NOI18N
-        UIManager.put( "nb.diff.deleted.color", new Color(51, 32, 36) ); //NOI18N
-        UIManager.put( "nb.diff.applied.color", new Color(36, 52, 36) ); //NOI18N
-        UIManager.put( "nb.diff.notapplied.color", new Color(32, 40, 51) ); //NOI18N
-        UIManager.put( "nb.diff.unresolved.color", new Color(51, 32, 36) ); //NOI18N
+        UIManager.put( "nb.diff.added.color", new Color(0x243424) ); //NOI18N
+        UIManager.put( "nb.diff.changed.color", new Color(0x202833) ); //NOI18N
+        UIManager.put( "nb.diff.deleted.color", new Color(0x332024) ); //NOI18N
+        UIManager.put( "nb.diff.applied.color", new Color(0x243424) ); //NOI18N
+        UIManager.put( "nb.diff.notapplied.color", new Color(0x202833) ); //NOI18N
+        UIManager.put( "nb.diff.unresolved.color", new Color(0x332024) ); //NOI18N
 
-        UIManager.put( "nb.diff.sidebar.changed.color", new Color(18, 30, 74) ); //NOI18N
-        UIManager.put( "nb.diff.sidebar.deleted.color", new Color(66, 30, 49) ); //NOI18N
+        UIManager.put( "nb.diff.sidebar.changed.color", new Color(0x121e4a) ); //NOI18N
+        UIManager.put( "nb.diff.sidebar.deleted.color", new Color(0x421e31) ); //NOI18N
 
-        UIManager.put( "nb.versioning.tooltip.background.color", new Color(18, 30, 74) ); //NOI18N
+        UIManager.put( "nb.versioning.tooltip.background.color", new Color(0x121e4a) ); //NOI18N
 
         //form designer
-        UIManager.put( "nb.formdesigner.gap.fixed.color", new Color(112,112,112) ); //NOI18N
-        UIManager.put( "nb.formdesigner.gap.resizing.color", new Color(116,116,116) ); //NOI18N
-        UIManager.put( "nb.formdesigner.gap.min.color", new Color(104,104,104) ); //NOI18N
+        UIManager.put( "nb.formdesigner.gap.fixed.color", new Color(0x707070) ); //NOI18N
+        UIManager.put( "nb.formdesigner.gap.resizing.color", new Color(0x747474) ); //NOI18N
+        UIManager.put( "nb.formdesigner.gap.min.color", new Color(0x686868) ); //NOI18N
 
         UIManager.put( "nbProgressBar.Foreground", black );
-        UIManager.put( "nbProgressBar.popupDynaText.foreground", new Color(191, 186, 172) );
+        UIManager.put( "nbProgressBar.popupDynaText.foreground", new Color(0xbfbaac) );
 
         // debugger
-        UIManager.put( "nb.debugger.debugging.currentThread", new Color(30, 80, 28) ); //NOI18N
-        UIManager.put( "nb.debugger.debugging.highlightColor", new Color(40, 60, 38) ); //NOI18N
-        UIManager.put( "nb.debugger.debugging.BPHits", new Color(65, 65, 0)); //NOI18N
-        UIManager.put( "nb.debugger.debugging.bars.BPHits", new Color(120, 120, 25)); //NOI18N
-        UIManager.put( "nb.debugger.debugging.bars.currentThread", new Color(40, 100, 35)); //NOI18N
+        UIManager.put( "nb.debugger.debugging.currentThread", new Color(0x1e501c) ); //NOI18N
+        UIManager.put( "nb.debugger.debugging.highlightColor", new Color(0x283c26) ); //NOI18N
+        UIManager.put( "nb.debugger.debugging.BPHits", new Color(0x41410)); //NOI18N
+        UIManager.put( "nb.debugger.debugging.bars.BPHits", new Color(0x787819)); //NOI18N
+        UIManager.put( "nb.debugger.debugging.bars.currentThread", new Color(0x286423)); //NOI18N
 
         //versioning
-        UIManager.put( "nb.versioning.added.color", new Color(0, 224, 0)); //NOI18N
-        UIManager.put( "nb.versioning.modified.color", new Color(81, 182, 255)); //NOI18N
-        UIManager.put( "nb.versioning.deleted.color", new Color(255, 200, 0)); //NOI18N
-        UIManager.put( "nb.versioning.conflicted.color", new Color(255, 51, 51)); //NOI18N
-        UIManager.put( "nb.versioning.ignored.color", new Color(130, 130, 130)); //NOI18N
+        UIManager.put( "nb.versioning.added.color", new Color(0x0e00)); //NOI18N
+        UIManager.put( "nb.versioning.modified.color", new Color(0x51b6ff)); //NOI18N
+        UIManager.put( "nb.versioning.deleted.color", new Color(0xffc80)); //NOI18N
+        UIManager.put( "nb.versioning.conflicted.color", new Color(0xff3333)); //NOI18N
+        UIManager.put( "nb.versioning.ignored.color", new Color(0x828282)); //NOI18N
         UIManager.put( "nb.versioning.remotemodification.color", black); //NOI18N
 
         // db.dataview
-        UIManager.put("nb.dataview.table.background", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.background")); //NOI18N
-        UIManager.put("nb.dataview.table.altbackground", new RelativeColor(new Color(0,0,0), new Color(30,30,30), "Table.background")); //NOI18N
-        UIManager.put("nb.dataview.table.sqlconstant.foreground", new Color(220,220,220)); //NOI18N
-        UIManager.put("nb.dataview.tablecell.focused", new RelativeColor(new Color(0,0,0), new Color(10,10,30), "Table.selectionBackground")); //NOI18N
-        UIManager.put("nb.dataview.table.rollOverRowBackground", new RelativeColor(new Color(0,0,0), new Color(30,30,30), "Table.selectionBackground")); //NOI18N
-        UIManager.put("nb.dataview.tablecell.edited.selected.foreground", new Color(255, 248, 60));  //NOI18N
-        UIManager.put("nb.dataview.tablecell.edited.unselected.foreground", new Color(0, 255, 16));  //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.background",  new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.background")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.foreground", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.foreground")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.selectedBackground", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.selectionBackground")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.selectedForeground", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.selectionForeground")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.daysOfTheWeekForeground", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "Table.background")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.todayBackground", new RelativeColor(new Color(0,0,0), new Color(20,20,20), "TableHeader.background")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.background.gradient.start", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "TableHeader.background")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.background.gradient.end", new RelativeColor(new Color(0,0,0), new Color(10,10,10), "TableHeader.background")); //NOI18N
-        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.linkForeground", new RelativeColor(new Color(0,0,0), new Color(0,0,0), "TableHeader.foreground")); //NOI18N
+        UIManager.put("nb.dataview.table.background", new RelativeColor(new Color(0x000), new Color(0x000), "Table.background")); //NOI18N
+        UIManager.put("nb.dataview.table.altbackground", new RelativeColor(new Color(0x000), new Color(0x1e1e1e), "Table.background")); //NOI18N
+        UIManager.put("nb.dataview.table.sqlconstant.foreground", new Color(0xdcdcdc)); //NOI18N
+        UIManager.put("nb.dataview.tablecell.focused", new RelativeColor(new Color(0x000), new Color(0xaa1e), "Table.selectionBackground")); //NOI18N
+        UIManager.put("nb.dataview.table.rollOverRowBackground", new RelativeColor(new Color(0x000), new Color(0x1e1e1e), "Table.selectionBackground")); //NOI18N
+        UIManager.put("nb.dataview.tablecell.edited.selected.foreground", new Color(0xfff83c));  //NOI18N
+        UIManager.put("nb.dataview.tablecell.edited.unselected.foreground", new Color(0x0ff10));  //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.background",  new RelativeColor(new Color(0x000), new Color(0x000), "Table.background")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.foreground", new RelativeColor(new Color(0x000), new Color(0x000), "Table.foreground")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.selectedBackground", new RelativeColor(new Color(0x000), new Color(0x000), "Table.selectionBackground")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.selectedForeground", new RelativeColor(new Color(0x000), new Color(0x000), "Table.selectionForeground")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.daysOfTheWeekForeground", new RelativeColor(new Color(0x000), new Color(0x000), "Table.background")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.todayBackground", new RelativeColor(new Color(0x000), new Color(0x141414), "TableHeader.background")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.background.gradient.start", new RelativeColor(new Color(0x000), new Color(0x000), "TableHeader.background")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.background.gradient.end", new RelativeColor(new Color(0x000), new Color(0xaaa), "TableHeader.background")); //NOI18N
+        UIManager.put("nb.dataview.jxdatetimepicker.todayPanel.linkForeground", new RelativeColor(new Color(0x000), new Color(0x000), "TableHeader.foreground")); //NOI18N
         
         // autoupdate
-        UIManager.put("nb.autoupdate.search.highlight", new Color(255, 75, 0));
+        UIManager.put("nb.autoupdate.search.highlight", new Color(0xff4b0));
         
-        UIManager.put("selection.highlight", new Color(202, 152, 0));
-        UIManager.put( "textArea.background", new Color( 51, 51, 55) );
+        UIManager.put("selection.highlight", new Color(0xca980));
+        UIManager.put( "textArea.background", new Color( 0x333337) );
 
         UIManager.put( "nb.laf.postinstall.callable", new Callable<Object>() { //NOI18N
 
@@ -217,17 +217,17 @@ public class DarkMetalTheme extends MetalTheme {
         });
 
         //#232854 - menu item accelerators are too dark
-        UIManager.put( "MenuItem.acceleratorForeground", new Color(198,198,198) );
-        UIManager.put( "CheckBoxMenuItem.acceleratorForeground", new Color(198,198,198) );
-        UIManager.put( "RadioButtonMenuItem.acceleratorForeground", new Color(198,198,198) );
+        UIManager.put( "MenuItem.acceleratorForeground", new Color(0xc6c6c6) );
+        UIManager.put( "CheckBoxMenuItem.acceleratorForeground", new Color(0xc6c6c6) );
+        UIManager.put( "RadioButtonMenuItem.acceleratorForeground", new Color(0xc6c6c6) );
 
         //browser picker
-        UIManager.put( "Nb.browser.picker.background.light", new Color(41, 41, 45));
-        UIManager.put( "Nb.browser.picker.foreground.light", new Color(172,172,172));
+        UIManager.put( "Nb.browser.picker.background.light", new Color(0x29292d));
+        UIManager.put( "Nb.browser.picker.foreground.light", new Color(0xacacac));
 
         //search in projects
-        UIManager.put("nb.search.sandbox.highlight", new Color(104, 93, 156));
-        UIManager.put("nb.search.sandbox.regexp.wrong", new Color(255, 71, 71));
+        UIManager.put("nb.search.sandbox.highlight", new Color(0x685d9c));
+        UIManager.put("nb.search.sandbox.regexp.wrong", new Color(0xff4747));
     }
 
     @Override
